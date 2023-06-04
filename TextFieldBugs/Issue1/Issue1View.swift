@@ -12,6 +12,10 @@ struct Issue1View: View {
 
     var body: some View {
         VStack(spacing: 24) {
+            // Custom text fields are not necessary here, but it's easier to track them on memory graph. Alternatively:
+            // TextField("Empty Field", text: .constant(""))
+            // TextField("Empty Field", text: .constant(""))
+
             CustomTextFieldView(text: $text).fixedSize(horizontal: false, vertical: true)
             // remove the second text field to fix the memory leak... ¯\_(ツ)_/¯
             CustomTextFieldView(text: $text).fixedSize(horizontal: false, vertical: true)
