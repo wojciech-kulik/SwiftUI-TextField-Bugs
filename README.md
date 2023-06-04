@@ -68,7 +68,8 @@ There are multiple ways not to fall into this specific bug:
 
 ## 📧 Next steps
 
-These issues have been reported to Apple: #FB12224488.
+These issues have been reported to Apple: #FB12224488. 🤔 This ID seems to be very "random".  
+Anyway, probably no one from Apple will ever read this bug, that's why I decided to describe it here.
 
 <br/>
 
