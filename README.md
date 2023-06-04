@@ -14,7 +14,7 @@ It took me a while to figure out what's going on but here are the steps:
 3. Tap the first `TextField` (it might not be necessary).
 4. Go back to the previous screen.
 
-#### 📈 Actual result
+#### 🤔 Actual result
 Even if you leave the screen, `TextField`s will be still in memory. What's even worse, if you have a binding in your `View` with `TextField`s, the reference will be kept as well. Therefore, if you bind to a view model, it won't be released.
 
 #### 🙏🏻 Expected result
@@ -44,7 +44,7 @@ This issue is reproducible on simulators and physical devices. Confirmed on iPho
 
 As you can see, this is indeed a series of unfortunate events, but it makes this issue even more dangerous. Potentially unrelated changes may trigger this problem.
 
-#### 📈 Actual result
+#### 🤔 Actual result
 Even if you leave the screen, `TextField` will be still in the memory. If you have a binding in the `View` with `TextField` the reference will be kept as well. Therefore, if you bind to a view model, it won't be released.  
 
 If you check the memory graph, you will see that the reference to the `TextField` is kept by `UIKBAutofillController`.
